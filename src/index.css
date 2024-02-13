@@ -1,0 +1,136 @@
+body {
+  background: #cccc;
+}
+.home {
+  background-color: #f7f5f9;
+}
+
+.form_icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.main_btn {
+  background-color: #8064a2;
+  color: #fff;
+}
+
+.or {
+  position: relative;
+}
+
+.or p {
+  background-color: #f7f5f9;
+  position: relative;
+  width: fit-content;
+  margin-inline: auto !important;
+  padding-inline: 10px;
+  z-index: 2;
+}
+
+.or_hr {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #ced4da;
+  z-index: 1;
+}
+
+.social_btn {
+  position: relative;
+}
+
+.social_btn svg {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.feature {
+  border: 1px solid var(--color);
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.feature p {
+  font-size: 14px;
+}
+
+.feature:hover {
+  background-color: var(--color);
+  color: #fff;
+}
+
+.feature h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature .icon {
+  display: inline-grid;
+  height: 55px;
+  width: 55px;
+  place-items: center;
+  background-color: #ffffff9f;
+  border-radius: 50%;
+  margin-inline-end: 10px;
+}
+
+.feature .outline_btn {
+  border: 1px solid var(--color);
+  color: var(--color);
+  transition: 0.3s ease;
+}
+
+.feature:hover .outline_btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.feature .outline_btn:hover {
+  background-color: #fff;
+  color: var(--color);
+}
+
+.toggle_sign {
+  width: fit-content;
+}
+
+.btn.sign {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.btn.sign:active {
+  border-color: transparent;
+}
+
+.btn.sign.active {
+  color: #8064a2;
+  border-bottom-color: #8064a2;
+}
+
+.level {
+  height: 20px;
+
+  align-items: center;
+}
+
+.level div {
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  margin-inline-end: 5px;
+}
