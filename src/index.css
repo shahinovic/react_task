@@ -1,9 +1,49 @@
-body {
-  background: #cccc;
+:root {
+  --color: #8064a2;
+  --blue-color: #0096c8;
 }
-.home {
+
+.purple {
+  color: var(--color);
+}
+
+.blue {
+  color: var(--blue-color);
+}
+
+body {
+  background-color: #fff;
+}
+
+/* start navbar */
+
+.navbar {
   background-color: #f7f5f9;
 }
+
+@media (min-width: 992px) {
+  .navbar-collapse.collapse {
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-outline-main {
+    min-width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-collapse.collapse {
+    padding-inline-start: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* end navbar */
 
 .form_icon {
   position: absolute;
@@ -14,7 +54,13 @@ body {
 }
 
 .main_btn {
-  background-color: #8064a2;
+  background-color: var(--color);
+
+  border-color: var(--color) !important;
+  color: #fff;
+}
+.main_btn:hover {
+  background-color: #9169c2;
   color: #fff;
 }
 
@@ -85,9 +131,10 @@ body {
   margin-inline-end: 10px;
 }
 
-.feature .outline_btn {
-  border: 1px solid var(--color);
+.outline_btn {
+  border: 1px solid var(--color) !important;
   color: var(--color);
+
   transition: 0.3s ease;
 }
 
@@ -131,6 +178,22 @@ body {
 .level div {
   width: 40px;
   height: 5px;
-  background-color: #fff;
+  background-color: #dedede;
   margin-inline-end: 5px;
+}
+
+.btn-outline-main {
+  color: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 5px;
+}
+
+.btn-outline-main:hover {
+  background-color: var(--color);
+  color: #fff;
+}
+
+.testimonials {
+  background-color: rgba(247, 245, 249, 1);
+  border-radius: 10px;
 }

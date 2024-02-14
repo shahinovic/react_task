@@ -1,23 +1,27 @@
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import {
   AddOurOwn,
   AppForm,
   Features,
-  Footer,
   Heading,
   Testimonials,
 } from "../../Components";
+import { landing } from "../../../assets";
 
 const Home = () => {
   return (
     <div className="home py-3 ">
       <Container>
-        <Heading />
-        <AppForm />
+        <Row className="g-4 py-5">
+          <Heading />
+          <AppForm />
+          <div className="img">
+            <img src={landing} className="w-100" alt="" />
+          </div>
+        </Row>
         <Features />
         <AddOurOwn />
         <Testimonials />
-        <Footer />
       </Container>
     </div>
   );
